@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: #deddd8;
+    background-color: #e4e4e4;
     color: #25211e;
     font-family: "K2D", Tahoma, Arial, sans-serif;
     font-size: 1rem;
@@ -75,6 +75,54 @@ nav a:focus,
 
 .page-content {
     padding: 2rem 0 2.5rem;
+}
+
+.portfolio-layout {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+}
+
+.project-preview-sidebar {
+    background-color: #f7f5ef;
+    border-radius: 16px;
+    box-shadow: 0 9px 20px rgba(51, 45, 39, 0.08);
+    margin-bottom: 1.25rem;
+    padding: 1.5rem;
+}
+
+.project-preview-card {
+    color: #25211e;
+    display: block;
+    text-decoration: none;
+}
+
+.preview-placeholder {
+    align-items: center;
+    background-color: #ece5dc;
+    border: 1px solid #d9d1c5;
+    color: #766a5e;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    letter-spacing: 0.04rem;
+    min-height: 180px;
+}
+
+.preview-label {
+    display: block;
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.project-preview-card:hover .preview-placeholder,
+.project-preview-card:focus .preview-placeholder {
+    background-color: #e2d8ca;
+}
+
+.project-preview-card:hover .preview-label,
+.project-preview-card:focus .preview-label {
+    color: #a87444;
 }
 
 .intro,
@@ -265,5 +313,12 @@ ul {
 
     .assignment-list {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 901px) {
+    .portfolio-layout {
+        align-items: start;
+        grid-template-columns: 2fr 1fr;
     }
 }
