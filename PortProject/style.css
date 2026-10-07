@@ -221,17 +221,6 @@ ul {
     padding: 0.7rem 0.85rem;
 }
 
-footer {
-    background-color: #25211e;
-    color: #e8e2da;
-    padding: 1rem;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
-
 @media (min-width: 601px) {
     .header-content,
     .page-content {
