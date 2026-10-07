@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: #e4e4e4;
     color: #25211e;
@@ -46,12 +42,12 @@ body {
     text-decoration: none;
 }
 
-nav {
+.site-nav {
     margin-top: 0.65rem;
     text-align: left;
 }
 
-nav a {
+.site-nav a {
     color: #51483f;
     display: inline-block;
     font-size: 0.92rem;
@@ -65,8 +61,8 @@ nav a {
     margin-right: 0.8rem;
 }
 
-nav a:hover,
-nav a:focus,
+.site-nav a:hover,
+.site-nav a:focus,
 .email-link a:hover,
 .email-link a:focus {
     color: #a87444;
@@ -143,7 +139,6 @@ nav a:focus,
     height: 270px;
     margin: 0 auto 1.5rem;
     object-fit: cover;
-    object-position: center;
     width: 220px;
 }
 
@@ -281,7 +276,7 @@ ul {
         flex-direction: row;
     }
 
-    nav {
+    .site-nav {
         margin-top: 0;
         text-align: right;
     }
