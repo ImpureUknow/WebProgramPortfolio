@@ -80,6 +80,7 @@ nav a:focus,
 .intro,
 .content-section {
     background-color: #f7f5ef;
+    border-radius: 16px;
     box-shadow: 0 9px 20px rgba(51, 45, 39, 0.08);
     margin-bottom: 1.25rem;
     padding: 1.5rem;
