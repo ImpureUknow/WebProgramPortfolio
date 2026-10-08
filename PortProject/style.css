@@ -181,7 +181,6 @@ h3 {
     background-color: #c79d6f;
     color: #25211e;
     display: inline-block;
-    margin-top: 0.5rem;
     padding: 0.55rem 1.05rem;
     text-decoration: none;
     transition: background-color 0.2s ease;
@@ -250,8 +249,21 @@ ul {
 }
 
 .project-link-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
     margin: 1.5rem 0 0;
     text-align: center;
+}
+
+.reference-image {
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    margin: 1rem auto 0;
+    max-width: 640px;
+    width: 100%;
 }
 
 .assignment-filters {
