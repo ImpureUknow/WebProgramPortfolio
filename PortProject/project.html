@@ -26,44 +26,118 @@
     <div class="page-content project-page">
         <div class="content-section assignment-section" id="assignment">
             <h1>Assignment</h1>
+            <div class="assignment-filters">
+                <button id="filter-all" class="active-filter" type="button">ทั้งหมด</button>
+                <button id="filter-html-css" type="button">HTML/CSS</button>
+                <button id="filter-javascript" type="button">JavaScript</button>
+            </div>
             <ul class="assignment-list">
-                <li><a href="assignments/week3/index.html">Week 3 - Cinnamon Roll Recipe</a></li>
-                <li><a href="assignments/week4/index.html">Week 4 - Pizza Dip Recipe</a></li>
-                <li><a href="assignments/week5/index.html">Week 5 - Blogger</a></li>
-                <li><a href="assignments/week6/register.html">Week 6 - Register / Login</a></li>
-                <li><a href="assignments/week7/index.html">Week 7 - Square Game</a></li>
-                <li><a href="assignments/week8/index.html">Week 8 - Shopping BKT</a></li>
+                <li class="html-css"><a href="assignments/week3/index.html">Week 3 - Cinnamon Roll Recipe</a></li>
+                <li class="html-css"><a href="assignments/week4/index.html">Week 4 - Pizza Dip Recipe</a></li>
+                <li class="javascript"><a href="assignments/week5/index.html">Week 5 - Blogger</a></li>
+                <li class="javascript"><a href="assignments/week6/register.html">Week 6 - Register / Login</a></li>
+                <li class="javascript"><a href="assignments/week7/index.html">Week 7 - Square Game</a></li>
+                <li class="javascript"><a href="assignments/week8/index.html">Week 8 - Shopping BKT</a></li>
             </ul>
         </div>
 
-        <div class="content-section project-section" id="project">
-            <h2>Project</h2>
-            <div id="long-way-home">
-                <h3 class="game-title">Long Way Home</h3>
-                <p class="game-type">2D Side-Scrolling Platformer | Unity 2D | Android Demo</p>
-                <p>Long Way Home เป็นเกมเดโมที่ผู้เล่นรับบทเป็นสุนัขที่พลัดหลง และออกเดินทางผ่านป่ากับถ้ำเพื่อกลับไปหาเจ้าของ ระหว่างทางผู้เล่นจะได้สำรวจ ต่อสู้ และพูดคุยกับตัวละครเพื่อทำภารกิจ</p>
+        <div class="project-layout" id="project">
+            <div class="content-section project-navigation">
+                <h2>Projects</h2>
+                <a href="#long-way-home">Long Way Home</a>
+                <a href="#interactive-wall">Interactive Wall</a>
+                <a href="#interactive-art-gallery">Interactive Art Gallery</a>
+                <a href="#line-stickers">LINE Stickers</a>
+                <a href="#code-name-katana">CodeName Katana</a>
+            </div>
 
-                <div class="game-gallery">
-                    <img id="game-image" src="My%20pic/long-way-home-cover.png" alt="ภาพเกม Long Way Home">
-                    <div class="game-gallery-controls">
-                        <p id="game-image-caption">ภาพปกเกม Long Way Home</p>
-                        <button id="change-image" type="button">ดูภาพถัดไป</button>
+            <div class="project-list">
+                <div class="content-section project-section" id="long-way-home">
+                    <h2>Project — Long Way Home</h2>
+                    <p class="game-type">2D Side-Scrolling Platformer | Unity 2D | Android Demo</p>
+                    <p>Long Way Home เป็นเกมเดโมที่ผู้เล่นรับบทเป็นสุนัขที่พลัดหลง และออกเดินทางผ่านป่ากับถ้ำเพื่อกลับไปหาเจ้าของ ระหว่างทางผู้เล่นจะได้สำรวจ ต่อสู้ และพูดคุยกับตัวละครเพื่อทำภารกิจ</p>
+
+                    <div class="game-gallery">
+                        <img id="game-image" src="My%20pic/long-way-home-cover.png" alt="ภาพเกม Long Way Home">
+                        <div class="game-gallery-controls">
+                            <p id="game-image-caption">ภาพปกเกม Long Way Home</p>
+                            <button id="change-image" type="button">ดูภาพถัดไป</button>
+                        </div>
+                    </div>
+
+                    <h3>การเล่นและระบบในเดโม</h3>
+                    <ul class="game-features">
+                        <li>สำรวจฉากด้วยปุ่มควบคุมบนหน้าจอ ทั้งการเดิน กระโดด วิ่ง และโจมตี</li>
+                        <li>พูดคุยกับ NPC รับภารกิจ และเก็บไอเท็มระหว่างการเดินทาง</li>
+                        <li>มีระบบพลังชีวิต จุด Checkpoint และบันทึกความคืบหน้าของเกม</li>
+                    </ul>
+
+                    <div class="game-video" id="game-demo">
+                        <h3>วิดีโอสาธิตเกม</h3>
+                        <a class="game-video-link" href="My%20pic/long-way-home-demo.mp4">
+                            <img src="My%20pic/long-way-home-demo-poster.jpg" alt="ภาพตัวอย่างการเล่นเกม Long Way Home">
+                            <span>คลิกเพื่อดูคลิปสาธิตเกม (22 วินาที)</span>
+                        </a>
                     </div>
                 </div>
 
-                <h3>การเล่นและระบบในเดโม</h3>
-                <ul class="game-features">
-                    <li>สำรวจฉากด้วยปุ่มควบคุมบนหน้าจอ ทั้งการเดิน กระโดด วิ่ง และโจมตี</li>
-                    <li>พูดคุยกับ NPC รับภารกิจ และเก็บไอเท็มระหว่างการเดินทาง</li>
-                    <li>มีระบบพลังชีวิต จุด Checkpoint และบันทึกความคืบหน้าของเกม</li>
-                </ul>
+                <div class="content-section project-section" id="interactive-wall">
+                    <h2>Project — Interactive Wall</h2>
+                    <p class="game-type">เรื่องสัตว์ทะเลอยู่ไหน? | MAT102 Group Project</p>
+                    <p>โปรเจกต์กลุ่มต้นแบบผนังภาพโต้ตอบธีมใต้ทะเล ผู้ชมแหวกสาหร่ายเพื่อค้นหาสัตว์ทะเลที่ซ่อนอยู่ และดูข้อมูลสั้น ๆ ของสัตว์ที่พบ</p>
 
-                <div class="game-video" id="game-demo">
-                    <h3>วิดีโอสาธิตเกม</h3>
-                    <a class="game-video-link" href="My%20pic/long-way-home-demo.mp4">
-                        <img src="My%20pic/long-way-home-demo-poster.jpg" alt="ภาพตัวอย่างการเล่นเกม Long Way Home">
-                        <span>คลิกเพื่อดูคลิปสาธิตเกม (22 วินาที)</span>
-                    </a>
+                    <img class="project-image" src="My%20pic/interactive-wall-demo.jpg" alt="ทีมกำลังสาธิต Interactive Wall ใต้ทะเลด้วยภาพฉายและอุปกรณ์โต้ตอบ">
+                    <p class="project-caption">ภาพการสาธิตโปรเจกต์ Interactive Wall</p>
+
+                    <h3>แนวคิดและการทำงาน</h3>
+                    <ul class="game-features">
+                        <li>ฉายภาพโลกใต้ทะเลให้ผู้ชมสำรวจและค้นหาสัตว์ทะเล</li>
+                        <li>ใช้เซนเซอร์ร่วมกับ Arduino รับการโต้ตอบ และเชื่อมกับภาพที่สร้างใน Unity</li>
+                        <li>เมื่อพบสัตว์ทะเล จะแสดงข้อมูลสั้น ๆ ให้ผู้ชมได้เรียนรู้</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a href="https://www.youtube.com/watch?v=NNu0K26TnE0">ดูวิดีโอสาธิตบน YouTube</a>
+                    </div>
+                </div>
+
+                <div class="content-section project-section" id="interactive-art-gallery">
+                    <h2>Project — Interactive Art Gallery</h2>
+                    <p class="game-type">MAT102 Mini Project | Unity 3D</p>
+                    <p>แกลเลอรีศิลปะเสมือนจริงที่ให้ผู้เล่นเดินสำรวจห้องจัดแสดง ดูภาพศิลปะและภาพถ่ายประวัติศาสตร์ พร้อมอ่านข้อมูลประกอบผลงาน</p>
+
+                    <img class="project-image" src="My%20pic/interactive-art-gallery.png" alt="ภายในแกลเลอรีเสมือนจริงที่จัดแสดงภาพศิลปะและประติมากรรม">
+                    <p class="project-caption">ภาพภายใน Interactive Art Gallery</p>
+
+                    <h3>สิ่งที่มีในโปรเจกต์</h3>
+                    <ul class="game-features">
+                        <li>เดินชมงานศิลปะและเปิดดูข้อมูลของผลงานที่จัดแสดง</li>
+                        <li>มีสวิตช์ไฟให้โต้ตอบเพื่อเปลี่ยนแสงในห้องจัดแสดง</li>
+                        <li>มีตู้ปลาและตัวละคร NPC ช่วยเพิ่มบรรยากาศภายในแกลเลอรี</li>
+                    </ul>
+                </div>
+
+                <div class="content-section project-section" id="line-stickers">
+                    <h2>Project — LINE Stickers</h2>
+                    <p class="game-type">โปรเจกต์รายวิชา | Sticker Design</p>
+                    <p>ชุดสติกเกอร์ LINE ที่ทำเป็นโปรเจกต์ของอีกวิชา โดยออกแบบตัวละครการ์ตูนหลายตัวสำหรับใช้สื่อสารในแชต</p>
+
+                    <img class="project-image" src="My%20pic/line-stickers.png" alt="ภาพตัวอย่างชุดสติกเกอร์ LINE ที่มีตัวละครการ์ตูน">
+                    <p class="project-caption">ภาพตัวอย่างผลงานในระบบ LINE Creators Market</p>
+                </div>
+
+                <div class="content-section project-section" id="code-name-katana">
+                    <h2>Project — CodeName Katana</h2>
+                    <p class="game-type">2D Animation | Action</p>
+                    <p>แอนิเมชัน 2D แนวแอ็กชันในโทนสีเทา เล่าฉากเผชิญหน้าระหว่างตัวละครสองฝ่าย</p>
+
+                    <div class="game-video">
+                        <h3>วิดีโอแอนิเมชัน</h3>
+                        <a class="game-video-link" href="My%20pic/code-name-katana.mp4">
+                            <img src="My%20pic/code-name-katana-cover.png" alt="ภาพจากแอนิเมชัน CodeName Katana">
+                            <span>คลิกเพื่อดูแอนิเมชันเต็ม (1:31 นาที)</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
