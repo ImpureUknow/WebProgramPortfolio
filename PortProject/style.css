@@ -262,7 +262,19 @@ ul {
 .assignment-list li {
     background-color: #f1ebe3;
     border-left: 3px solid #c79d6f;
+}
+
+.assignment-list a {
+    color: #25211e;
+    display: block;
     padding: 0.7rem 0.85rem;
+    text-decoration: none;
+}
+
+.assignment-list a:hover,
+.assignment-list a:focus {
+    background-color: #e2d8ca;
+    text-decoration: underline;
 }
 
 @media (min-width: 601px) {
