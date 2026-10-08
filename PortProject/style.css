@@ -93,16 +93,12 @@ body {
     text-decoration: none;
 }
 
-.preview-placeholder {
-    align-items: center;
-    background-color: #ece5dc;
-    border: 1px solid #d9d1c5;
-    color: #766a5e;
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: center;
-    letter-spacing: 0.04rem;
-    min-height: 180px;
+.preview-image {
+    border-radius: 10px;
+    display: block;
+    max-height: 320px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .preview-label {
@@ -111,9 +107,10 @@ body {
     margin-top: 0.75rem;
 }
 
-.project-preview-card:hover .preview-placeholder,
-.project-preview-card:focus .preview-placeholder {
-    background-color: #e2d8ca;
+.preview-subtitle {
+    color: #766a5e;
+    display: block;
+    font-size: 0.9rem;
 }
 
 .project-preview-card:hover .preview-label,
@@ -277,6 +274,81 @@ ul {
     text-decoration: underline;
 }
 
+.game-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+
+#long-way-home {
+    padding-top: 1rem;
+}
+
+.game-type {
+    color: #766a5e;
+    margin-top: 0;
+}
+
+.game-gallery {
+    margin: 1.5rem 0;
+}
+
+.game-gallery img,
+.game-video-link img {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+.game-gallery-controls {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+}
+
+.game-gallery-controls p {
+    color: #766a5e;
+    margin: 0;
+}
+
+.game-gallery-controls button {
+    background-color: #ece5dc;
+    border: 1px solid #d9d1c5;
+    border-radius: 6px;
+    color: #25211e;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.game-gallery-controls button:hover,
+.game-gallery-controls button:focus {
+    background-color: #e2d8ca;
+}
+
+.game-features {
+    margin-bottom: 1.5rem;
+}
+
+.game-video-link {
+    color: #625141;
+    display: block;
+    text-decoration: none;
+}
+
+.game-video-link span {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.game-video-link:hover,
+.game-video-link:focus {
+    text-decoration: underline;
+}
+
 @media (min-width: 601px) {
     .header-content,
     .page-content {
@@ -327,5 +399,9 @@ ul {
     .portfolio-layout {
         align-items: start;
         grid-template-columns: 2fr 1fr;
+    }
+
+    .intro h1 {
+        font-size: 1.75rem;
     }
 }
