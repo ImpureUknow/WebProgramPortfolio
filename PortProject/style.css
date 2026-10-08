@@ -266,6 +266,15 @@ ul {
     width: 100%;
 }
 
+#ref a {
+    color: #625141;
+}
+
+#ref a:hover,
+#ref a:focus {
+    color: #a87444;
+}
+
 .assignment-filters {
     display: flex;
     flex-wrap: wrap;
